@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins','Pretendard';
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:inherit;
+    font-family: 'Poppins', sans-serif;
+}
+.headerBox {
+    display: flex;
+    width: 100%;
+    height: 80px;;
+    padding: 0 80px ;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    z-index: 9;
+}
+.depth1 li a {
+    color:#1F3743;
+    font-size: 1.125rem;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.depth1 li a:hover {
+    color:#fff;
+}
+.depth2 li a {
+    color:#fff;
+    font-weight: 400;
+    transition: 0.5s;
+}
+.depth2 li a:hover {
+    font-weight: 600;
+}
+.headerBox .menuopen > span {
+    background: #1F3743;
+}
+.langBtn {
+    color:#1F3743;
+    font-weight: 600;
+}
+.sub > h2 {
+    position: absolute;
+    left: -9999px;
+}
+
+
+.sebang-sub {    
+    position: relative;
+    padding: 100px 200px 0;
+    max-width: 100%;
+    height: auto;
+}
+.menu > h3 {
+    font-size: 4.5rem;
+    color:#1F3743;
+    opacity: 0;
+    transition: 3s ease;
+}
+.sebang-sub.on .menu h3 {
+    opacity: 1;
+}
+.subNav {
+    margin: 50px 0;
+    margin-left: -50px;
+    transition: 2s;
+    opacity: 0;
+}
+.sebang-sub.on .subNav {
+    margin-left: 0;
+    opacity: 1;
+}
+
+.subNav ul {
+    display: flex;
+    gap:50px;
+    color:#ADB6BB;
+    transition: 0.3s;
+}
+.subNav ul li {
+    position: relative;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.subNav ul li .on {
+    color:#266184;
+}
+.subNav ul li .on::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #266184;
+    position: absolute;
+    bottom:-10px;
+    left:0;
+    transition: 0.5s;
+}
+.subNav ul li::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #266184;
+    position: absolute;
+    bottom:-10px;
+    left:0;
+    transition: 0.5s;
+}
+.subNav ul li:hover::before {
+    width: 100%;
+}
+.subNav ul li:hover {
+    color:#266184;
+}
+.subImg {
+    position: absolute;
+    width:100%;
+    height: 520px;
+    left: 0;
+    overflow: hidden;
+    background-color: #266184;
+    transition: 0.8s;
+}
+.subImg::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    right:0;
+    background-color: #fff;
+}
+@keyframes move {
+    0% {width: 100%;}
+    100% {width: 0;}
+}
+.sebang-sub.on .subImg::after {
+    animation: move 1.2s ease-in-out;
+    animation-fill-mode:forwards;
+}
+
+.subImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.comText {
+    max-height: 100%;
+    margin-top: 680px;
+}
+.chapter h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color:#266184;
+    margin-bottom: 20px;
+}
+.chapter {
+    margin-bottom: 180px;
+    opacity: 0;
+    transition: 1.5s;
+}
+
+
+.chapter01 p{
+    font-size: 3rem;
+    font-weight: 700;
+    color:black;
+    transition: 0.5s;    
+}
+.chapter01 p em {
+    color:#266184;
+    font-style: normal;
+}
+
+.chapter02 .textBox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+    text-align: center;
+    justify-content: space-between;
+}
+.chapter02 .textBox .mean {
+    align-items: center;
+    text-align: center;    
+}
+.chapter02 .textBox .mean p {
+    color:black;
+}
+.chapter02 .textBox .mean .radius {
+    width: 220px;
+    height: 220px;
+    position: relative;
+    background-color: #ADB6BB;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.chapter02 .textBox .mean .radius em {
+    font-weight: 700;
+    color:#1F3743;
+    font-style: normal;
+    font-size: 2.5rem;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.chapter03 {
+    display: flex;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+.chapterRight {
+    max-width: 550px;
+    height: 370px;
+}
+.chapterRight img {
+    width: 100%;
+}
+.mentality .num {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #266184;
+    position: relative;
+}
+.mentality .num b {
+    color:#E6E7E9;
+    font-size: 1.25rem;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.mentality {
+    display: flex;
+    font-size: 1.15rem;
+    gap:30px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.mentality p {
+    color:black;
+}
+
+
+/* sub02 */
+.service .comText > .chapter01 >h3 {
+    position: absolute;
+    left:-9999px;   
+}
+.service .comText > .chapter03 {
+    display: block;
+}
+.service .comText > .chapter >h3 {
+    font-size: 2.25rem;
+    text-transform: uppercase;   
+}
+.service .comText > .chapter01 > p {
+    font-size: 3rem;
+    font-weight: 700;
+    color:black;
+    transition: 0.5s;
+} 
+.service .comText > .chapter > .btn {
+    margin:40px 0 30px 0;
+}
+.service .comText > .chapter > .btn > button {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color:#ADB6BB;
+    margin-right: 40px;
+}
+.service .comText > .chapter > .btn > button.on {
+    border: none;
+    background-color: #266184;
+    color:#fff;
+}
+.service .comText > .chapter > p {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.service .comText > .chapter > img {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 30px;
+    object-fit:cover;
+}
+.service .comText > .chapter03 > .btn .big {
+    width: 240px;
+}
+.service .comText > .chapter04 > .btn > button{
+    width: 250px;
+}

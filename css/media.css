@@ -1,0 +1,57 @@
+/* header */
+@media(max-width:1400px) {
+    nav {display: none;}
+    .headerBox {
+        justify-content: space-between;
+    }
+    .foot2 > li {
+        display: none;
+    }
+    .foot1 {
+        flex-direction: column;
+    }
+@media(max-width:1220px) {
+    .subNav ul{
+        display:none;
+    }
+    .subImg {
+        height: 300px;
+    }
+}
+
+
+
+
+
+
+/* sub-01 */
+.service .comText > .chapter01 > p {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:1556px){
+    
+    .sub .snb1 > li {
+        flex-wrap: wrap;
+    }
+    .chapterRight {
+        display: none;
+    }
+    .foot2 > li {
+        display: none;
+    }
+    footer .foot-line .foot1 {
+        display: block;
+        margin-right: 15vw;
+    }
+    .footer .foot-line {
+        justify-content: space-around;
+    }
+    .chapter03 {
+        justify-content: center;
+    }
+}
+
+
+

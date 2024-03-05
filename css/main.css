@@ -1,0 +1,456 @@
+/*////////// section01 //////////*/
+.main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    z-index: 1;
+    top:0;
+    left:0;
+    overflow: hidden;
+}
+.main-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.main-area {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#E6E7E9;
+}
+.logo-global {
+    display: flex;
+}
+.main-text {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.logo-global h2 > img {
+    width: 300px;
+    margin-right: 45px;
+}
+.logo-global .global {
+    display: flex;
+    position: relative;
+    font-size: 2rem;
+    font-weight: 300;
+    padding-left: 45px;
+    gap:50px;
+}
+.logo-global .global::before {
+    content: '';
+    display: block;
+    height: 60px;
+    width: 2px;
+    background-color: #E6E7E9;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+.main-text .group {
+    margin-top: 60px;
+}
+.main-text .group > h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.main-text .group > p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+
+/*////////// section02 //////////*/
+.Service {
+    width: 100%;
+    height: 100vh;
+    margin-top: 200px;
+    position: relative;
+}
+.Service-container {
+    padding: 0 80px;
+    position: relative;
+}
+.Service-left {
+    position: relative;
+    display: block;
+    top:0;
+    left:0;
+    width: 40%;
+    z-index: 99;
+}
+.Service-text h2 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color:#266184;
+    margin-bottom: 35px;
+}
+.Service-text p {
+    font-size: 3.375rem;
+    font-weight: 500;
+}
+.Service-text b {
+    font-size: 3.375rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 100px;
+}
+.Service-right {
+    position: relative;
+    display: block;
+    top:0;
+    left:0;
+    justify-content: center;
+    align-items: center;
+}
+.Service-right .img-wrap {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 448px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.img-inner {
+    display: flex;
+    position: absolute;
+    margin: 0 auto;
+    gap:20px;
+    overflow: hidden;
+}
+.img-inner .ServiceImg {
+    width: 448px;
+    height: 448px;
+    border: 0;
+    overflow: hidden;
+    transition: 0.4s;
+    
+}
+.img-inner .ServiceImg:hover {
+    border-radius: 50%;
+}
+.img-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+/*////////// section03 //////////*/
+.Capability {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.Capability-wrap {
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.Capability-wrap .capa-text {
+    font-size: 3.375rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.Capability-wrap .double-down {
+    padding-top: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.Capability-wrap .double-down img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.Capability-wrap .double-down img:nth-child(2) {
+    top:150%;
+}
+
+/*////////// section04 //////////*/
+.esg {
+    width: 100%;
+    height: 100vh;
+    background-color: #1F3743;
+    overflow: hidden;
+    color:#E6E7E9;
+}
+.esg .esg-wrap {
+    margin: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.esg-left {
+    position: relative;
+}
+.esg-wrap .esg-left h2 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+.esg-wrap .esg-left em {
+    font-size: 3.375rem;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 20px;
+    display: block;
+}
+.esg-wrap .esg-left p {
+    margin-bottom: 60px;
+}
+
+.esg-wrap .esg-left a {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #266184;
+}
+.esg-wrap .esg-left a .esg-more > em {
+    position: absolute;
+    font-style: italic;
+    font-size: 1rem;
+    text-align: center;
+    white-space: nowrap;
+    top:30%;
+    left:0%;
+    transform: translate(-50% -50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+.esg-wrap .esg-left a > img{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top:30%;
+    left:35%;
+    transform: translate(-50% -50%);
+    transition: 0.4s;
+}
+    /* hover */
+.esg-wrap .esg-left a:hover .esg-more > em {
+    opacity: 1;
+    left:40%;
+}
+.esg-wrap .esg-left a:hover img {
+    left:220%;
+}
+    /* right */
+.esg-right {
+    width: 60%;
+    padding-top: 50px;
+}
+
+.esg-right .esg-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.esg-right .esg-list .esg-box {
+    width: 325px;
+    height: 325px;
+    display: flex;
+    position: relative;
+    background-color: #E6E7E950;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.esg-right .esg-list .esg-box img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.esg-right .esg-list .esg-box p {
+    position: absolute;
+    bottom:20px;
+    left:20px;
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+    /* hover */
+.esg-right .esg-list .esg-box:hover {
+    border-radius: 35%;
+}
+.esg-right .esg-list .esg-box:hover img {
+    opacity: 0.8;
+    scale: 1.2;
+}
+.esg-right .esg-list .esg-box:hover p {
+    font-size: 2.25rem;
+    bottom:40px;
+    left:28px;
+}
+
+/*////////// section05 //////////*/
+.company {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    color:#1F3743;
+}
+.companyBg {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(0.5) opacity(0.3);    
+}
+.companyBg img {
+    width: 100%;
+}
+.company .company-wrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-15%);
+    text-align: center;
+    justify-content: center;
+}
+
+.company .company-wrap .textTyping{
+    margin: 0 20%;
+    height: 170px;
+}
+
+.company .company-wrap h3 {
+    font-size: 4rem;
+    font-weight: 500;
+    display: none;
+}
+/*
+.company .company-wrap .typing {
+    display: inline-block;
+    animation: cursor 1s infinite;
+}
+*/
+/*
+@keyframes cursor {
+    0%, 100%{ border-right: 2px solid #266184}
+    50%{border-right: 2px solid #E6E7E9}
+}
+*/
+.company .company-wrap .typing {
+    font-size: 4rem;
+    font-weight: 500;
+}
+.company .company-wrap .typing:after  {
+    display:inline-block;
+    margin-left:2px;
+    vertical-align:middle;
+    content:'';
+    background:#1F3743;
+    width:2px;
+    height:70px;
+    animation:cursor infinite 1s ease;
+}
+
+@keyframes cursor {
+    0%	{opacity:0;}
+    100%	{opacity:1;}
+}
+
+.company-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 100px 0 60px;
+}
+.company-line .comLogo {
+    width: 160px;
+    height: auto;
+    
+}
+.company-line .comLogo img {
+    width: 100%;
+}
+.company-line .text {
+    position: relative;
+    margin-left: 60px;
+}
+.company-line .text::before {
+    content: '';
+    display:block;
+    width: 1px;
+    height: 30px;
+    background-color: #1F374350;
+    position: absolute;
+    top:0;
+    left:-30px;
+}
+.company-btn {
+    position: absolute;
+    left:50%;
+    color:#E6E7E9;
+    transform: translateX(-50%);
+}
+.company-btn > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #266184; 
+}
+.company-btn > a .esg-color > em{
+    position: absolute;
+    font-style: italic;
+    font-size: 1rem;
+    text-align: center;
+    white-space: nowrap;
+    top:30%;
+    left:0%;
+    transform: translate(-50% -50%);
+    opacity: 0;
+    transition: 0.5s;
+    color:#266184; 
+}
+.company-btn > a .white {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top:30%;
+    left:35%;
+    transform: translate(-50% -50%);
+    transition: 0.4s;
+    display: block;
+}
+
+    /* hover */
+.company-btn a:hover .white {
+    left:220%;
+    filter: invert(17%) sepia(23%) saturate(1481%) hue-rotate(158deg) brightness(101%) contrast(91%);
+}
+    .company-btn a:hover .esg-color > em {
+    opacity: 1;
+    left:40%;
+    mix-blend-mode: difference;
+
+}
