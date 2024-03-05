@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEBANG</title>
+    <link rel="stylesheet" href="./css/jquery.fullPage.css">
+    <link rel="stylesheet" href="./css/commom.css">
+    <link rel="stylesheet" href="./css/main.css">    
+    <link rel="shortcut icon" href="./img/logo/pop01.ico">
+    <link rel="apple-touch icon" href="./img/logo/pop01.ico">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/jquery.fullPage.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <div class="wrap100">
+            <div class="headerBox">
+                <h1 class="logo"><a href="index.html"><img src="./img/logo/logo_white.png" alt="main_white_logo"></a></h1>
+                <nav>
+                    <ul id="gnb" class="depth1">
+                        <li><a href="./sub01.html">회사소개</a>
+                            <ul class="depth2">
+                                <li><a href="#">인사말</a></li>
+                                <li><a href="#">기업소개</a></li>
+                                <li><a href="#">ci소개</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="./sub01.html">경영이념</a></li>
+                                <li><a href="#">인증자료</a></li>
+                                <li><a href="#">조직도</a></li>
+                                <li><a href="#">찾아오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./sub02.html">사업소개</a>
+                            <ul class="depth2">
+                                <li><a href="./sub02.html">컨테이너 사업</a></li>
+                                <li><a href="#">bulk 사업</a></li>
+                                <li><a href="#">3자 물류 사업</a></li>
+                                <li><a href="#">lnk 사업</a></li>
+                                <li><a href="#">영업문의</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">지속가능경영</a>
+                            <ul class="depth2">
+                                <li><a href="#">윤리경영</a></li>
+                                <li><a href="#">컴플라이언스</a></li>
+                                <li><a href="#">지속가능경영보고서</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">고객지원</a>
+                            <ul class="depth2">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">물류뉴스</a></li>
+                                <li><a href="#">사이버신문고</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">투자정보</a>
+                            <ul class="depth2">
+                                <li><a href="#">공시정보</a></li>
+                                <li><a href="#">ir 자료실</a></li>
+                                <li><a href="#">투자상담</a></li>
+                                <li><a href="#">공고</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="langBox">
+                    <button class="langBtn">
+                        <img src="./icon/globe_white.png" alt="globe">
+                        KR
+                        <img src="./icon/arrow-down_white.png" alt="arrow" class="arrow">
+                    </button>
+                    <ul class="lang">
+                        <li><a href="#">en</a></li>
+                        <li><a href="#">ch</a></li>
+                    </ul>
+                </div>
+                <button class="menuopen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!--/////header/////-->
+
+    <!-- sub_nav -->
+    <section class="sub">
+        <h2>sub 메뉴</h2>
+        <div class="subBtn">
+            <ul class="sublang">
+                <li><a href="#">kr</a></li>
+                <li><a href="#">en</a></li>
+                <li><a href="#">ch</a></li>
+            </ul>
+            <button class="subclose">
+                <img src="./icon/exit_white.png" alt="subexit">
+            </button>
+        </div>
+        <div class="subBg">
+            <!-- <div class="Bg"></div> -->
+            <img src="./img/container04.jpg" alt="bg04">
+            <img src="./img/logo/logo03.png" alt="logo_white">
+        </div>
+        <nav>
+            <ul id="snb" class="snb1">
+                <li class="snb1-li li-1"><a href="./sub01.html">회사소개</a>
+                    <ul class="snb2">
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">기업소개</a></li>
+                        <li><a href="#">ci소개</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="./sub01.html">경영이념</a></li>
+                        <li><a href="#">인증자료</a></li>
+                        <li><a href="#">조직도</a></li>
+                        <li><a href="#">찾아오시는 길</a></li>
+                    </ul>
+                </li>
+                <li class="snb1-li li-2"><a href="./sub02.html">사업소개</a>
+                    <ul class="snb2">
+                        <li><a href="./sub02.html">컨테이너 사업</a></li>
+                        <li><a href="#">bulk 사업</a></li>
+                        <li><a href="#">3자 물류 사업</a></li>
+                        <li><a href="#">lnk 사업</a></li>
+                        <li><a href="#">영업문의</a></li>
+                    </ul>
+                </li>
+                <li class="snb1-li li-3"><a href="#">지속가능경영</a>
+                    <ul class="snb2">
+                        <li><a href="#">윤리경영</a></li>
+                        <li><a href="#">컴플라이언스</a></li>
+                        <li><a href="#">지속가능경영보고서</a></li>
+                    </ul>
+                </li>
+                <li class="snb1-li li-4"><a href="#">고객지원</a>
+                    <ul class="snb2">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">물류뉴스</a></li>
+                        <li><a href="#">사이버신문고</a></li>
+                    </ul>
+                </li>
+                <li class="snb1-li li-5"><a href="#">투자정보</a>
+                    <ul class="snb2">
+                        <li><a href="#">공시정보</a></li>
+                        <li><a href="#">ir 자료실</a></li>
+                        <li><a href="#">투자상담</a></li>
+                        <li><a href="#">공고</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    
+    <!-- main -->
+    <!-- section01 -->
+    <div id="fullPage">
+        <section  id="section01" class="main section">
+            <h2>section01_main</h2>
+            <video class="main-bg" autoplay loop muted>
+                <source src="./vid/main_bg.mp4" type="video/mp4">
+            </video>
+            <article class="main-area">
+                <div class="main-text">
+                    <div class="logo-global">
+                        <h3>
+                            <img src="./img/logo/logo03.png" alt="logo03">
+                        </h3>
+                        <div class="global">
+                            <p>G l o b a l</p>
+                            <p>M o v i n g</p>
+                            <p>N e t w o r k</p>
+                        </div>
+                    </div>     
+                    <div class="group">
+                        <h3>세방그룹은 명실상부한 대한민국 대표 종합물류 기업입니다.</h3>
+                        <p>전 세계를 무대로 최상의 물류 서비스를 제공하겠습니다.</p>
+                    </div>           
+                </div>
+            </article>
+        </section>
+        <!-- section02 -->
+        <section id="section02" class="Service section">
+            <h2>section02_Service</h2>
+            <article class="Service-wrap wrap100">
+                <div class="Service-container">
+                    <div class="Service-left">
+                        <div class="Service-text">
+                            <h3>Service</h3>
+                            <p>신속 · 정확 · 안전한</p>
+                            <b>물류 서비스를 제공</b>
+                        </div>
+                        <!--
+                        <div class="Service-list">
+                            <ul>
+                                <li><a href="#">운송 transportation</a></li>
+                                <li><a href="#">하역 stevedoring</a></li>
+                                <li><a href="#">보관 storage</a></li>
+                                <li><a href="#">중량물 heavy cargo</a></li>
+                                <li><a href="#">3pl third party logistics</a></li>
+                                <li><a href="#">콜드체인 cold chain </a></li>
+                            </ul>
+                        </div>
+                        -->
+                    </div>
+                    <div class="Service-right">
+                        <div class="img-wrap">
+                            <div class="drag">drag</div>
+                            <div class="img-inner">
+                                <div class="ServiceImg Service01"><img src="./img/Service01.jpg" alt="Service-img01"></div>
+                                <div class="ServiceImg Service02"><img src="./img/Service02.jpg" alt="Service-img02"></div>
+                                <div class="ServiceImg Service03"><img src="./img/Service03.jpg" alt="Service-img03"></div>
+                                <div class="ServiceImg Service04"><img src="./img/Service04.jpg" alt="Service-img04"></div>
+                                <div class="ServiceImg Service05"><img src="./img/Service05.jpg" alt="Service-img05"></div>
+                                <div class="ServiceImg Service06"><img src="./img/Service06.jpg" alt="Service-img06"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- section03 -->
+        <section id="section03" class="Capability section">
+            <h2>section03_Capability</h2>
+            <article class="Capability-wrap">
+                <div class="capa-text">
+                    <h3>세방</h3>
+                    <p>세방은 수출입 화물의 항만영역, 창고보관, 육해상운송,<br> 
+                        중량화물 운송 및 설치, 3자물류 등</p>
+                    <b>최상의 종합물류 서비스를 제공합니다.</b>
+                    <div class="double-down">
+                        <img src="./icon/arrow-down.png" alt="double-arrow">
+                        <img src="./icon/arrow-down.png" alt="double-arrow">
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- section04 -->
+        <section id="section04" class="esg section">
+            <h2>section04_esg</h2>
+            <article class="esg-wrap">
+                <h2>esg-wrap</h2>
+                <article class="esg-left">
+                    <h3>ESG Goals</h3>
+                    <em>지속가능경영 목표</em>
+                    <p>‘이해관계자 동반성장’, ‘친환경 기업 이미지 제고’,<br>‘통합 리스크 관리’  3대 전략 방향으로 실천하고 있습니다.</p>
+                    <a href="#">
+                        <img src="./icon/right-line-arrow-white.png" alt="right-line-arrow-white">
+                        <div class="esg-more">
+                            <em>more view</em>
+                        </div>
+                    </a>
+                </article>
+                <article class="esg-right">
+                    <h2>esg-right</h2>
+                    <div class="esg-list">
+                        <div class="esg-box">
+                            <img src="./img/esg01.jpg" alt="no poverty">
+                            <p>no poverty</p>
+                        </div>
+                        <div class="esg-box">
+                            <img src="./img/esg02.jpg" alt="zero hunger">
+                            <p>zero hunger</p>
+                        </div>
+                        <div class="esg-box">
+                            <img src="./img/esg03.jpg" alt="good health
+                            and well-bing">
+                            <p>good health and well-bing</p>
+                        </div>
+                        <div class="esg-box">
+                            <img src="./img/esg04.jpg" alt="quality
+                            education">
+                            <p>quality education</p>
+                        </div>
+                        <div class="esg-box">
+                            <img src="./img/esg05.jpg" alt="gender
+                            equality">
+                            <p>gender
+                                equality</p>
+                        </div>
+                        <div class="esg-box">
+                            <img src="./img/esg06.jpg" alt="clean water
+                            and sanitation">
+                            <p>clean water and sanitation</p>
+                        </div>
+                    </div>
+                </article>
+            </article>
+        </section>
+        <!-- section05 -->
+        <section id="section05" class="company section">
+            <h2>section05_company</h2>
+            <div class="companyBg">
+                <img src="./img/container04.jpg" alt="company-bg">
+            </div>
+            <article class="company-wrap">
+                <!--<div class="textTyping">
+                <h3>전 세계를 무대로 최상의 물류 서비스를 제공하겠습니다</h3>-->
+                <p class="typing"></p>
+                </div>
+                <div class="company-line">
+                    <div class="comLogo">
+                        <img src="./img/logo/logo04.png" alt="logo04">
+                    </div>
+                    <div class="text">
+                        <p>Global Moving Network</p>
+                    </div>
+                </div>
+                <div class="company-btn">
+                    <a href="#">
+                        <img src="./icon/right-line-arrow-white.png" class="white" alt="right-line-arrow-white">
+                        <div class="esg-color">
+                            <em>more view</em>
+                        </div>
+                    </a>
+                </div>            
+            </article>
+        </section>
+        <!-- Footer -->
+        <footer id="footer" class="section fp-auto-height">
+            <article class="foot-line">
+                <div class="foot-add">
+                    <h3>
+                        <img src="./img/logo/logo_white.png" alt="footer_white_logo">
+                    </h3>
+                    <p>세방 주식회사</p>
+                    <div class="add">
+                        <p>주소</p>
+                        <address>(06212) 서울특별시 강남구 선릉로 433(역삼동, 세방빌딩)</address>
+                    </div>
+                    <div class="add-1">
+                        <p>사업자등록번호</p>
+                        <address>617-81-03842</address>
+                    </div>
+                    
+                </div>
+                <nav class="footerNav">
+                    <ul id="foot" class="foot1">
+                        <li class="foot1-li"><a href="./sub01.html">회사소개</a>
+                            <ul class="foot2">
+                                <li><a href="#">인사말</a></li>
+                                <li><a href="#">기업소개</a></li>
+                                <li><a href="#">ci소개</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="./sub01.html">경영이념</a></li>
+                                <li><a href="#">인증자료</a></li>
+                                <li><a href="#">조직도</a></li>
+                                <li><a href="#">찾아오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li class="foot1-li"><a href="./sub02.html">사업소개</a>
+                            <ul class="foot2">
+                                <li><a href="./sub02.html">컨테이너 사업</a></li>
+                                <li><a href="#">bulk 사업</a></li>
+                                <li><a href="#">3자 물류 사업</a></li>
+                                <li><a href="#">lnk 사업</a></li>
+                                <li><a href="#">영업문의</a></li>
+                            </ul>
+                        </li>
+                        <li class="foot1-li"><a href="#">지속가능경영</a>
+                            <ul class="foot2">
+                                <li><a href="#">윤리경영</a></li>
+                                <li><a href="#">컴플라이언스</a></li>
+                                <li><a href="#">지속가능경영보고서</a></li>
+                            </ul>
+                        </li>
+                        <li class="foot1-li"><a href="#">고객지원</a>
+                            <ul class="foot2">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">물류뉴스</a></li>
+                                <li><a href="#">사이버신문고</a></li>
+                            </ul>
+                        </li>
+                        <li class="foot1-li"><a href="#">투자정보</a>
+                            <ul class="foot2">
+                                <li><a href="#">공시정보</a></li>
+                                <li><a href="#">ir 자료실</a></li>
+                                <li><a href="#">투자상담</a></li>
+                                <li><a href="#">공고</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </article>
+            <div class="drop-list">
+                <div class="company-list">
+                    <div class="com-listBox">
+                        <ul>
+                            <li>경영관리본부</li>
+                            <li>KAM영업본부</li>
+                            <li>TPL영업본부</li>
+                            <li>전략기획본부</li>
+                        </ul>
+                        <ul>
+                            <li>광양지사</li>
+                            <li>경기지사</li>
+                            <li>부산지사</li>
+                            <li>전북지사</li>
+                        </ul>
+                        <ul class="depth-1"> 
+                            <li>인천지사</li>
+                            <li>강원지사</li>
+                            <li>당진지사</li>
+                            <li>목포지사</li>
+                        </ul>
+                        <ul class="depth-1">
+                            <li>삼천포지사</li>
+                            <li>경남지사</li>
+                            <li>울산지사</li>
+                            <li>포항지사</li>
+                        </ul>
+                    </div>                
+                    <button class="company-add">
+                        본사 : 135-919 서울특별시 강남구 선릉로 433 (역삼동, 세방빌딩)
+                            <img class="box-arrow" src="./icon/arrow-up-white.png" alt="up-arrow-white">
+                    </button>
+                </div>                
+                <button class="top">
+                        <img src="./icon/arrow-up-white.png" alt="up-arrow-white">
+                </button>
+            </div>
+            <small>Copyright&copy; SEBANG CO, LTD ALL RIGHT RESERVED</small>
+        </footer>
+    </div>
+
+</body>
+</html>
